@@ -20,7 +20,6 @@ export const Container = styled.main`
             }
         }
         >img{
-            border: solid;
             width: 100%;
             margin-top: 5px;
             border-radius: 5px;
