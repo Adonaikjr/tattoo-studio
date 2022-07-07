@@ -1,14 +1,15 @@
+import { Button } from "../Button";
 import { Container } from "./styled";
-
+import lg from '../../assents/logo.jpg'
 export function Header() {
     return (
         <Container>
             <ul>
-                <li>telefone: 115465454</li>
-                <li>Instagram: @dsasadads</li>
-                <li>Logo</li>
-                <li>Facebook</li>
-                <li>Integrantes</li>
+                <li> <Button title='Home' /></li>
+                <li> <Button title='Contato' /></li>
+                <li> <img src={lg}/> </li>
+                <li> <Button title='Fotos' /></li>
+                <li> <Button title='Login' /></li>
             </ul>
         </Container>
     )

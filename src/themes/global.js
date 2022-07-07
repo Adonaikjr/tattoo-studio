@@ -9,7 +9,7 @@ export default createGlobalStyle`
     }
     body{
         max-width: 77.5vh;
-       // background: ${({ theme }) => theme.COLORS.BACKGROUND};
-        //color:whitesmoke;
+      background: ${({ theme }) => theme.COLORS.BACKGROUND};
+       color:whitesmoke;
     }
 `
