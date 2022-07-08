@@ -1,9 +1,11 @@
+
 import { Container } from "./styled";
 
-export function Button(props){
+export function Button({title}){
     return(
         <Container>
-            {props.title}
+            {title}
+            
         </Container>
     )
 }

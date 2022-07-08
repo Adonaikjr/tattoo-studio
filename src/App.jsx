@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Header } from './components/Header';
-import { Container, Section, Footer } from './styled';
+import { Container, Section, Footer, Main } from './styled';
 
 
 //imagens 
@@ -36,26 +36,31 @@ function App() {
 
       <Container>
       <Header/>
-        <div>
+
+        <Main>
           <h1>Kinsui Tattoo
           <p>Supply</p>
           </h1>
           <img src={cp} height={200}/>
-        </div>
+        </Main>
 
         <Section>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eaque fugiat dolorum est quis iure voluptas repudiandae accusamus atque quasi corporis iusto aperiam asperiores reiciendis ullam corrupti numquam, aliquam aliquid.</p>
+          <p>
+            <h4>Studio</h4>
+            <h2>Quem somos</h2>
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eaque fugiat dolorum est quis iure voluptas repudiandae accusamus atque quasi corporis iusto aperiam asperiores reiciendis ullam corrupti numquam, aliquam aliquid.
+          </p>
           <img src={lg} height={200}/>
         </Section>
 
-      <Footer>
+        <h3>Ultimas Tatuagens</h3>
         <Carousel isRTL breakPoints={BREAKE_POINTS}>
           <img src={img1} alt="img1" height={300} />
           <img src={img2} alt="img2" height={300} />  
           <img src={img4} alt="img4" height={300} />  
           <img src={img5} alt="img5" height={300} />
         </Carousel>
-      </Footer>
+   
 
       </Container>
       

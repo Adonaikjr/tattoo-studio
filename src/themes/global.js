@@ -11,7 +11,7 @@ export default createGlobalStyle`
         height: 100vh;
         margin: 0 auto;
         padding: 0 auto;
-        max-width: 77.5vh;
+        max-width: 100vh;
       background: ${({ theme }) => theme.COLORS.BACKGROUND};
        color:whitesmoke;
     }

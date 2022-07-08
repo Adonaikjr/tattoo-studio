@@ -7,15 +7,18 @@ export const Container = styled.header`
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    height: 7vh;
+    height: 10vh;
     li{
+        
         display:flex;
+        flex-direction: row;
         align-items: center;
         list-style: none;
+        width: 100%;
         >img{
-            height:120%;
+            margin: 0 auto;
+            height:90%;
             border-radius:100%;
-            box-shadow: 0 0 1em whitesmoke;
         }
     }
 }

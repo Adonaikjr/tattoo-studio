@@ -1,6 +1,7 @@
 export default {
     COLORS: {
       BACKGROUND: "#121212",
-      FONTS:"#FFFF"
+      WHITE:"#FFFF",
+        ZAPZAP:" #34af23"
     }
   }
