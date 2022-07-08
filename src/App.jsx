@@ -1,8 +1,16 @@
 import { useState } from 'react'
 import { Header } from './components/Header';
-import { Container } from './styled';
+import { Container, Section, Footer } from './styled';
+
+
+//imagens 
 import cp from './assents/capa.jpg'
 import lg from './assents/logo.jpg'
+import img1 from './assents/img1.jpg'
+import img2 from './assents/img2.jpg'
+import img4 from './assents/img4.jpg'
+import img5 from './assents/img5.jpg'
+//fim imagem
 import Carousel from 'react-elastic-carousel';
 
 
@@ -25,9 +33,9 @@ function App() {
 
   return (
     <>
-      <Header/>
+
       <Container>
-        
+      <Header/>
         <div>
           <h1>Kinsui Tattoo
           <p>Supply</p>
@@ -35,15 +43,19 @@ function App() {
           <img src={cp} height={200}/>
         </div>
 
-        <div className='inf'>
+        <Section>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eaque fugiat dolorum est quis iure voluptas repudiandae accusamus atque quasi corporis iusto aperiam asperiores reiciendis ullam corrupti numquam, aliquam aliquid.</p>
           <img src={lg} height={200}/>
-        </div>
+        </Section>
 
+      <Footer>
         <Carousel isRTL breakPoints={BREAKE_POINTS}>
-    
+          <img src={img1} alt="img1" height={300} />
+          <img src={img2} alt="img2" height={300} />  
+          <img src={img4} alt="img4" height={300} />  
+          <img src={img5} alt="img5" height={300} />
         </Carousel>
-        
+      </Footer>
 
       </Container>
       

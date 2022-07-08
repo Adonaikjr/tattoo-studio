@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
+    width: 100%;
     height:80vh;
+
+margin: 0 auto;
+padding: 0 auto;
     >div{
         >h1{
             color: white;
@@ -15,6 +19,7 @@ export const Container = styled.main`
             justify-content: center;
             align-items: center;
             font-family: 'Miltonian Tattoo', cursive;
+
             p{
                 font-size:16px;
             }
@@ -27,8 +32,10 @@ export const Container = styled.main`
     	    background-image:('./assents/capa.jpg');
         }
     }
-.inf{
-   
+
+`
+
+export const Section = styled.section`
     display: flex;
     p{
         margin: 12px;
@@ -41,6 +48,11 @@ export const Container = styled.main`
         width: 220px;
         height:220px;
         border-radius:5px;
-    }
+    
 }
+`
+
+export const Footer = styled.footer`
+margin: 10px;
+
 `
