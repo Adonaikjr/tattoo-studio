@@ -14,7 +14,6 @@ export const Container = styled.header`
         flex-direction: row;
         align-items: center;
         list-style: none;
-        width: 100%;
         >img{
             margin: 0 auto;
             height:90%;

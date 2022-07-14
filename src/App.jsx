@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Header } from './components/Header';
-import { Container, Section, Footer, Main } from './styled';
+import { Container, Section, Main, Border, Content } from './styled';
 
 
 //imagens 
@@ -10,8 +10,10 @@ import img1 from './assents/img1.jpg'
 import img2 from './assents/img2.jpg'
 import img4 from './assents/img4.jpg'
 import img5 from './assents/img5.jpg'
+import border from './assents/border.svg'
 //fim imagem
 import Carousel from 'react-elastic-carousel';
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -43,16 +45,16 @@ function App() {
           </h1>
           <img src={cp} height={200}/>
         </Main>
+        <Border><img src={border}/></Border>
 
         <Section>
-          <p>
+          <Content>
             <h4>Studio</h4>
             <h2>Quem somos</h2>
              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eaque fugiat dolorum est quis iure voluptas repudiandae accusamus atque quasi corporis iusto aperiam asperiores reiciendis ullam corrupti numquam, aliquam aliquid.
-          </p>
+          </Content>
           <img src={lg} height={200}/>
         </Section>
-
         <h3>Ultimas Tatuagens</h3>
         <Carousel isRTL breakPoints={BREAKE_POINTS}>
           <img src={img1} alt="img1" height={300} />
@@ -60,8 +62,7 @@ function App() {
           <img src={img4} alt="img4" height={300} />  
           <img src={img5} alt="img5" height={300} />
         </Carousel>
-   
-
+          <Footer/>
       </Container>
       
     </>

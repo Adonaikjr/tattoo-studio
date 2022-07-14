@@ -11,7 +11,7 @@ export function Header() {
                 <li> <Link to='/'><Button title='Home' /></Link></li>
                 <li> <Link to='/contact'><Button title='Contato'/></Link></li>
                 <li><img src={lg} /></li>
-                <li> <Button title='Fotos'/></li>
+                <li> <Link to='/fotos'><Button title='Fotos'/></Link></li>
                 <li> <Button title='Login'/></li>
             </ul>
         </Container>

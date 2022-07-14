@@ -3,33 +3,37 @@ import styled from "styled-components";
 export const Container = styled.main`
 margin: 0 auto;
 padding: 0 auto;
-h3{
-    margin-left: 30px;
-}
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 
 `
 
 export const Section = styled.section`
     display: flex;
-    p{
-        h2{
-            margin-top:-20px;
-        }
+
+    margin-bottom: 4rem;
+    >img{
+        width: 220px;
+        height:220px;
+        border-radius:5px;
+
+    }
+  
+`
+export const Content = styled.div`
+      
         display:flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 12px;
         text-shadow: 0 0 1rem white;
         display: flex;
         align-items:center;
         text-align:center;
-    }
-    >img{
-        width: 220px;
-        height:220px;
-        border-radius:5px;
-    }
-  
+      
+
+    
 `
 
 export const Footer = styled.footer`
@@ -61,4 +65,13 @@ export const Main = styled.main`
         mask-image: linear-gradient(to top, transparent 5%, black 50% );
     	background-image:('./assents/capa.jpg');
     }
+`
+
+export const Border = styled.div`
+img{
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 `
